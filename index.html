@@ -80,7 +80,7 @@
 
                 <!-- Navegación Desktop -->
                 <nav class="hidden lg:flex items-center space-x-8 font-cinzel">
-                    <a href="#page-catalogo" class="nav-link text-gray-300 hover:text-accent-metal transition-colors">Catálogo</a>
+                    <a href="#catalogo" class="nav-link text-gray-300 hover:text-accent-metal transition-colors">Catálogo</a>
                     <a href="#page-sobre-nosotros" class="nav-link text-gray-300 hover:text-accent-metal transition-colors">Sobre nosotros</a>
                     <a href="#page-como-adquirir" class="nav-link text-gray-300 hover:text-accent-metal transition-colors">Cómo adquirir</a>
                     <a href="#page-contacto" class="nav-link text-gray-300 hover:text-accent-metal transition-colors">Contacto</a>
@@ -98,7 +98,7 @@
         <!-- Menú Móvil (oculto por defecto) -->
         <div id="mobile-menu" class="hidden lg:hidden bg-dark border-t border-gray-700">
             <div class="px-4 py-4 space-y-4 font-cinzel text-center">
-                 <a href="#page-catalogo" class="block nav-link text-gray-300 hover:text-accent-metal">Catálogo</a>
+                 <a href="#catalogo" class="block nav-link text-gray-300 hover:text-accent-metal">Catálogo</a>
                  <a href="#page-sobre-nosotros" class="block nav-link text-gray-300 hover:text-accent-metal">Sobre nosotros</a>
                  <a href="#page-como-adquirir" class="block nav-link text-gray-300 hover:text-accent-metal">Cómo adquirir</a>
                  <a href="#page-contacto" class="block nav-link text-gray-300 hover:text-accent-metal">Contacto</a>
@@ -109,8 +109,9 @@
     <!-- ========= MAIN CONTENT ========= -->
     <main class="pt-20">
         
-        <!-- PÁGINA DE INICIO -->
+        <!-- PÁGINA DE INICIO Y CATÁLOGO -->
         <div id="page-home" class="page-section">
+            <!-- Sección de Inicio -->
             <section class="min-h-[80vh] flex items-center justify-center text-center bg-dark py-20">
                 <div class="container mx-auto px-4">
                     <img src="https://res.cloudinary.com/dm2g8wqvx/image/upload/v1760547338/Imagen_de_WhatsApp_2025-10-15_a_las_11.30.19_5030f640_z3ecrs.jpg" alt="Logo Blackbeard Editorial" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full shadow-lg border-2 border-accent-metal">
@@ -119,19 +120,17 @@
                     <p class="max-w-2xl mx-auto mt-8 text-gray-300 leading-relaxed">
                         En un océano cultural saturado, Blackbeard Editorial surge como un barco insurgente. Publicamos obras que piensan, incomodan y cuestionan, convirtiendo la palabra en un acto de resistencia.
                     </p>
-                    <a href="#page-catalogo" class="mt-10 inline-block bg-accent-metal text-dark font-bold py-3 px-8 rounded-md hover:bg-white transition-colors font-roboto-slab">
+                    <a href="#catalogo" class="mt-10 inline-block bg-accent-metal text-dark font-bold py-3 px-8 rounded-md hover:bg-white transition-colors font-roboto-slab">
                         Explorar Catálogo
                     </a>
                 </div>
             </section>
-        </div>
-
-        <!-- PÁGINA DE CATÁLOGO -->
-        <div id="page-catalogo" class="page-section hidden">
-            <section class="py-12 md:py-20 bg-dark">
+            
+            <!-- Sección de Catálogo -->
+            <section id="catalogo" class="py-12 md:py-20 bg-dark">
                 <div class="container mx-auto px-4">
-                    <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 font-cinzel text-light">Catálogo</h1>
-                    <div id="book-grid-catalogo" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 font-cinzel text-light">Catálogo</h2>
+                    <div id="book-grid-catalogo" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-8">
                         <!-- Las tarjetas de libros se insertarán aquí -->
                     </div>
                 </div>
@@ -142,30 +141,38 @@
         <div id="page-sobre-nosotros" class="page-section hidden">
             <section class="py-12 md:py-20 bg-graphite">
                 <div class="container mx-auto px-4 max-w-4xl text-light">
-                    <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 font-cinzel">Nuestra Misión</h1>
-                    <div class="space-y-12">
-                        <!-- Presentación -->
-                        <div class="text-lg leading-relaxed text-gray-300">
-                           <p>En un océano cultural saturado de fórmulas repetidas y discursos domesticados, Blackbeard Editorial surge como un barco insurgente dispuesto a navegar fuera de las rutas seguras. Nacemos con el propósito de publicar obras que piensen, incomoden y cuestionen; libros que no teman hundir los ídolos de la época ni desafiar la comodidad intelectual del lector.</p>
-                           <p class="mt-4">Nuestro catálogo reúne textos de psicología, filosofía, sociología y literatura, siempre guiados por una misma brújula: la búsqueda de lo contracultural, lo auténtico y lo profundamente humano. Publicamos autores que se atreven a decir lo que otros callan, que observan la civilización desde sus grietas y convierten la palabra en un acto de resistencia y lucidez.</p>
+                    <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 font-cinzel">Blackbeard Editorial</h1>
+                    <div class="space-y-12 text-lg leading-relaxed text-gray-300">
+                        <div>
+                            <p>En un océano cultural saturado de fórmulas repetidas y discursos domesticados, Blackbeard Editorial surge como un barco insurgente dispuesto a navegar fuera de las rutas seguras. Nacemos con el propósito de publicar obras que piensen, incomoden y cuestionen; libros que no teman hundir los ídolos de la época ni desafiar la comodidad intelectual del lector.</p>
+                            <p class="mt-4">Nuestro catálogo reúne textos de psicología, filosofía, sociología y literatura, siempre guiados por una misma brújula: la búsqueda de lo contracultural, lo auténtico y lo profundamente humano. Publicamos autores que se atreven a decir lo que otros callan, que observan la civilización desde sus grietas y convierten la palabra en un acto de resistencia y lucidez.</p>
+                            <p class="mt-4">En Blackbeard Editorial, cada libro es un abordaje, cada publicación una rebelión. No editamos para complacer al mercado, sino para abrir un frente de pensamiento libre, crítico y ferozmente honesto.</p>
+                            <p class="mt-6 italic border-l-4 border-accent-metal pl-4">Blackbeard simboliza el espíritu del pirata intelectual: indomable, lúcido y sin amo. Creemos que la verdadera literatura y el pensamiento genuino no siguen corrientes: las crean.</p>
                         </div>
 
-                        <!-- Orígenes y Objetivos -->
                         <div>
                             <h2 class="text-3xl font-bold font-cinzel mb-6 border-b-2 border-accent-metal pb-3">Orígenes y Objetivos</h2>
-                            <p class="mb-4 text-gray-300">Blackbeard Editorial comenzó a gestarse en el año 2023, en Buenos Aires, como una respuesta al vaciamiento intelectual que domina gran parte del panorama cultural contemporáneo.</p>
-                            <ul class="list-disc list-inside space-y-3 text-gray-300">
-                                <li>Promover obras que desafíen el statu quo y se atrevan a pensar lo impensado.</li>
-                                <li>Tender puentes entre la filosofía, la psicología, la sociología y la literatura.</li>
-                                <li>Apoyar a autores independientes, alejados de la lógica del mercado y del ruido mediático.</li>
-                                <li>Fomentar el arte como forma de resistencia, revalorizando el libro como artefacto de reflexión.</li>
+                            <p class="mb-4">Blackbeard Editorial comenzó a gestarse en el año 2023, en Buenos Aires, como una respuesta al vaciamiento intelectual que domina gran parte del panorama cultural contemporáneo. Lo que nació como una idea íntima —una reacción ante la uniformidad del pensamiento y la banalización del arte— se transformó rápidamente en un proyecto editorial con una misión precisa: recuperar el valor del pensamiento libre, la palabra crítica y la belleza no domesticada.</p>
+                            <p class="mb-4 font-semibold">Nuestros objetivos son claros:</p>
+                            <ul class="list-disc list-inside space-y-3">
+                                <li>Promover obras que desafíen el statu quo, que expongan las contradicciones de la modernidad y se atrevan a pensar lo impensado.</li>
+                                <li>Tender puentes entre la filosofía, la psicología, la sociología y la literatura, para mostrar que las fronteras entre disciplinas son ilusorias y que todo pensamiento auténtico es, en esencia, interdisciplinario.</li>
+                                <li>Apoyar a autores independientes, alejados de la lógica del mercado y del ruido mediático, que escriben desde la verdad de su experiencia y no desde la necesidad de agradar.</li>
+                                <li>Fomentar el arte como forma de resistencia, revalorizando el libro como objeto estético, como artefacto de reflexión y como espacio de confrontación con el espíritu del tiempo.</li>
                             </ul>
                         </div>
                         
-                        <!-- Sobre el Creador -->
                         <div>
                            <h2 class="text-3xl font-bold font-cinzel mb-6 border-b-2 border-accent-metal pb-3">Sobre su Creador</h2>
-                           <p class="text-gray-300 leading-relaxed">La editorial fue fundada por Ramiro Fernández, Licenciado en Filosofía y Letras por la Universidad de Buenos Aires (UBA). Artista, fotógrafo y pensador independiente, Fernández combina la reflexión filosófica con una mirada estética que busca desarticular los mecanismos del poder cultural y revelar la belleza oculta en lo marginal. Desde Buenos Aires, Blackbeard Editorial encarna su visión: una trinchera para los inconformistas, los pensadores errantes y los artistas que todavía creen que la palabra puede cambiar el rumbo del mundo.</p>
+                           <p>La editorial fue fundada por Ramiro Fernández, Licenciado en Filosofía y Letras por la Universidad de Buenos Aires (UBA). Artista, fotógrafo y pensador independiente, Fernández combina la reflexión filosófica con una mirada estética que busca desarticular los mecanismos del poder cultural y revelar la belleza oculta en lo marginal.</p>
+                           <p class="mt-4">Su trayectoria se caracteriza por un constante impulso a romper las formas establecidas, explorar lo no dicho y desafiar toda idea que aspire a volverse dogma. En sus obras y proyectos visuales, Ramiro aborda la intersección entre arte, lenguaje y pensamiento crítico, construyendo un universo donde la creación es siempre una forma de disidencia.</p>
+                           <p class="mt-4">Desde Buenos Aires, Blackbeard Editorial encarna su visión: una trinchera para los inconformistas, los pensadores errantes y los artistas que todavía creen que la palabra puede cambiar el rumbo del mundo.</p>
+                        </div>
+                        <div class="text-center pt-8">
+                             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-dark text-accent-metal border border-accent-metal font-bold py-3 px-8 rounded-md hover:bg-accent-metal hover:text-dark transition-colors">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg>
+                                <span>Seguir en Instagram</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -176,32 +183,33 @@
         <div id="page-como-adquirir" class="page-section hidden">
              <section class="py-12 md:py-20 bg-dark">
                 <div class="container mx-auto px-4 max-w-4xl text-light">
-                    <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 font-cinzel">Cómo Adquirir</h1>
+                    <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 font-cinzel">Método de Adquisición</h1>
                     <div class="bg-graphite p-8 rounded-lg shadow-lg">
-                        <p class="mb-6 text-gray-300">Concebimos la compra de un libro como una experiencia personal y directa. Nuestro sistema de adquisición está diseñado para mantener una comunicación humana y cercana con cada lector.</p>
+                        <p class="mb-6 text-gray-300">En Blackbeard Editorial concebimos la compra de un libro como una experiencia personal y directa, sin intermediarios, sin algoritmos que filtren el pensamiento. Nuestro sistema de adquisición está diseñado para mantener una comunicación humana y cercana con cada lector.</p>
                         
                         <h2 class="text-2xl font-bold font-cinzel mb-4">Pasos para la Compra</h2>
-                        <ol class="list-decimal list-inside space-y-3 text-gray-300 mb-8">
-                            <li><strong>Explore el catálogo:</strong> Navegue por los títulos en nuestro sitio web. Cada libro tiene un código de identificación único (ej: BB-021-FIL).</li>
-                            <li><strong>Contacto directo vía WhatsApp:</strong> Comuníquese con nosotros mediante el enlace "Solicitar por WhatsApp" en cada libro.</li>
-                            <li><strong>Confirmación y envío digital:</strong> Tras confirmar el pago, el libro se envía en formato digital (PDF o EPUB) a su correo o WhatsApp.</li>
+                        <ol class="list-decimal list-inside space-y-4 text-gray-300 mb-8">
+                            <li><strong>Ingreso al sitio web oficial:</strong> Los lectores pueden acceder al catálogo completo aquí. Allí encontrarán todos los títulos disponibles, cada uno acompañado por su sinopsis, datos técnicos y un código de identificación único (por ejemplo: BB-021-FIL), que facilita el proceso de pedido.</li>
+                            <li><strong>Contacto directo vía WhatsApp:</strong> Una vez seleccionado el libro, el lector debe comunicarse con nosotros por WhatsApp mediante el enlace disponible en la página de cada obra. Este contacto directo nos permite confirmar el pedido y responder consultas.</li>
+                            <li><strong>Confirmación y envío digital:</strong> Tras la confirmación del pago, el libro se envía en formato digital (PDF o EPUB, según disponibilidad) directamente al correo electrónico o al número de WhatsApp del lector.</li>
                         </ol>
 
-                        <h2 class="text-2xl font-bold font-cinzel mb-4">Métodos de Pago</h2>
+                        <h2 class="text-2xl font-bold font-cinzel mb-4">Métodos de Pago Disponibles</h2>
                         <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center text-gray-300 mb-8">
                             <li class="border border-gray-700 p-3 rounded">Mercado Pago</li>
                             <li class="border border-gray-700 p-3 rounded">Transferencia</li>
                             <li class="border border-gray-700 p-3 rounded">PayPal</li>
                             <li class="border border-gray-700 p-3 rounded">Criptomonedas</li>
                         </ul>
+                         <p class="text-center text-gray-400 italic mb-10">No imprimimos en papel: creemos que la difusión del pensamiento debe ser ágil, accesible y respetuosa con el entorno.</p>
 
-                        <p class="text-center text-gray-400 italic">No imprimimos en papel: creemos que la difusión del pensamiento debe ser ágil, accesible y respetuosa con el entorno.</p>
-
-                        <div class="text-center mt-10">
-                            <a href="#page-contacto" class="bg-accent-metal text-dark font-bold py-3 px-8 rounded-md hover:bg-white transition-colors">
-                                ¿Consultas? Contáctanos
-                            </a>
-                        </div>
+                        <h2 class="text-2xl font-bold font-cinzel mb-6 text-center">Formulario de Consulta</h2>
+                        <form id="consulta-form" class="max-w-xl mx-auto space-y-4">
+                            <input type="text" id="form-nombre" placeholder="Nombre" required class="w-full bg-dark border border-gray-700 rounded p-3 text-light focus:ring-2 focus:ring-accent-metal focus:outline-none">
+                            <input type="email" id="form-email" placeholder="Email" required class="w-full bg-dark border border-gray-700 rounded p-3 text-light focus:ring-2 focus:ring-accent-metal focus:outline-none">
+                            <textarea id="form-mensaje" placeholder="Su consulta..." rows="4" required class="w-full bg-dark border border-gray-700 rounded p-3 text-light focus:ring-2 focus:ring-accent-metal focus:outline-none"></textarea>
+                            <button type="submit" class="w-full bg-accent-metal text-dark font-bold py-3 px-8 rounded-md hover:bg-white transition-colors">Enviar Consulta por WhatsApp</button>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -227,6 +235,18 @@
         </div>
 
     </main>
+
+    <!-- ========= FLOATING ACTION BUTTONS ========= -->
+    <div class="fixed bottom-4 right-4 z-50 flex flex-col gap-3">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/5491130459747?text=Hola,%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors" aria-label="Contactar por WhatsApp">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.52,3.48A11.9,11.9,0,0,0,12,0,11.88,11.88,0,0,0,2.18,17.4L.37,23.63l6.23-1.8A11.89,11.89,0,0,0,12,24h0a11.9,11.9,0,0,0,11.9-11.9,11.82,11.82,0,0,0-3.38-8.62ZM12,22.12h0a10,10,0,0,1-5.1-1.47l-.36-.21-3.79,1.11L4,17.85l-.23-.38a10,10,0,0,1,15.26-6.4,9.9,9.9,0,0,1,2.92,7.A10,10,0,0,1,12,22.12Zm5.44-7.83c-.29-.15-1.73-.85-2-1s-.46-.15-.66.15c-.2.29-.76.85-.93,1s-.34.2-.63.05a8.32,8.32,0,0,1-3-1.87,9.15,9.15,0,0,1-2-2.61c-.2-.34,0-.51.13-.66s.29-.34.44-.51a1.71,1.71,0,0,0,.29-.49,1,1,0,0,0,0-.51c-.05-.14-.66-1.58-.9-2.17s-.5-.51-.66-.51h-.54a1,1,0,0,0-.73.34,3,3,0,0,0-1,2.4,5.49,5.49,0,0,0,1.14,3,10.15,10.15,0,0,0,4.53,4.05,6.53,6.53,0,0,0,1.5.56,3.47,3.47,0,0,0,1.67.1,2.75,2.75,0,0,0,1.8-1.18,2.23,2.23,0,0,0,.15-1.18C17.73,14.44,17.58,14.29,17.44,14.29Z"/></svg>
+        </a>
+        <!-- Instagram Button -->
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:opacity-90 transition-opacity" aria-label="Visitar nuestro Instagram">
+             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg>
+        </a>
+    </div>
 
     <!-- ========= FOOTER ========= -->
     <footer class="bg-dark border-t border-gray-700">
@@ -267,6 +287,7 @@
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         const bookGridCatalogo = document.getElementById('book-grid-catalogo');
+        const consultaForm = document.getElementById('consulta-form');
 
         // --- RENDERIZADO DE LIBROS ---
         const createBookCard = (book) => {
@@ -299,34 +320,71 @@
         // --- LÓGICA DE NAVEGACIÓN (SPA) ---
         const pageSections = document.querySelectorAll('.page-section');
         const navLinks = document.querySelectorAll('.nav-link');
-        
-        const showPage = (targetId = '#page-home') => {
-            const pageId = targetId.substring(1);
+
+        const showPage = (pageIdToShow) => {
             pageSections.forEach(section => {
-                section.classList.toggle('hidden', section.id !== pageId);
+                section.classList.toggle('hidden', section.id !== pageIdToShow);
             });
-            
-            navLinks.forEach(link => {
-                link.classList.toggle('active', link.getAttribute('href') === targetId);
-            });
-            window.scrollTo(0, 0);
+            if (pageIdToShow !== 'page-home') {
+                window.scrollTo(0, 0);
+            }
         };
 
         const handleNavigation = () => {
-            const hash = window.location.hash || '#page-home';
-            showPage(hash);
+            const hash = window.location.hash;
+
+            // Determine which page to show
+            if (hash.startsWith('#page-')) {
+                showPage(hash.substring(1));
+            } else {
+                // This covers #catalogo, #page-home, and empty hash
+                showPage('page-home');
+            }
+
+            // Update active link state
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                const isHomePageContext = !hash || hash === '#page-home' || hash === '#catalogo';
+                
+                if (linkHref === '#catalogo') {
+                    link.classList.toggle('active', isHomePageContext);
+                } else {
+                    link.classList.toggle('active', linkHref === hash);
+                }
+            });
         };
 
         window.addEventListener('hashchange', handleNavigation);
-        handleNavigation(); // Carga inicial
+        handleNavigation(); // Initial load
+
+        // --- FORMULARIO DE CONSULTA A WHATSAPP ---
+        if (consultaForm) {
+            consultaForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const phoneNumber = '5491130459747';
+                const nombre = document.getElementById('form-nombre').value;
+                const email = document.getElementById('form-email').value;
+                const mensaje = document.getElementById('form-mensaje').value;
+
+                const fullMessage = `Hola, soy ${nombre} (${email}).\n\nConsulta:\n${mensaje}`;
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`;
+
+                window.open(whatsappUrl, '_blank');
+            });
+        }
 
         // --- MENÚ MÓVIL ---
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        document.querySelectorAll('#mobile-menu a, .container a').forEach(link => {
-             if (link.getAttribute('href').startsWith('#')) {
-                link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.querySelectorAll('header a').forEach(link => {
+             const href = link.getAttribute('href');
+             if (href && href.startsWith('#')) {
+                link.addEventListener('click', () => {
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                         mobileMenu.classList.add('hidden');
+                    }
+                });
             }
         });
     });
@@ -334,6 +392,7 @@
 
 </body>
 </html>
+
 
 
 
